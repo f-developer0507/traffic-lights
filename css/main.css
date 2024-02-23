@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: cursive;
+}
+
+.wrapper {
+  position: relative;
+
+  width: 150px;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+
+  background-color: #111;
+  border-radius: 8px;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.red.active {
+  background-color: red;
+  box-shadow: 0 0 25px red;
+}
+
+.second-card.red-active {
+  color: yellow;
+  text-shadow: 0 0 30px yellow;
+  background-color: red;
+  box-shadow: 0 0 25px red;
+}
+
+.yellow.active {
+  background-color: yellow;
+  box-shadow: 0 0 25px yellow;
+}
+
+.second-card.yellow-active {
+  color: green;
+  text-shadow: 0 0 30px green;
+  background-color: yellow;
+  box-shadow: 0 0 25px yellow;
+}
+
+.green.active {
+  background-color: green;
+  box-shadow: 0 0 25px green;
+}
+
+.second-card.green-active {
+  color: red;
+  text-shadow: 0 0 30px red;
+  background-color: green;
+  box-shadow: 0 0 25px green;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 220px);
+
+  width: 50px;
+  height: 220px;
+
+  border-radius: 0px 0px 8px 8px;
+  background-color: #111;
+}
+.bottom-right {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+
+  width: 150px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0px 8px 8px 0px;
+  background-color: #111;
+}
+.second-card {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  color: #fff;
+}
